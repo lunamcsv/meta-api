@@ -1,0 +1,16 @@
+{
+  "name": "meta-api",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "https://github.com/lunamcsv/meta-api.git",
+  "scripts": {
+    "git": "git add . && git commit -m \"update\" && git push"
+  },
+  "author": "lunamcsv <lunamcsv@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.2"
+  }
+}
