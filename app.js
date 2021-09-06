@@ -20,6 +20,13 @@ app.get('/token/:token_id', async (req, res) => {
     res.send({})
 })
 
+app.get('/token/:token_id', async (req, res) => {
+  const tokenId = parseInt(req.params.token_id).toString()
+  const metadata = await db(meta, {_id: tokenId}, '')
+  if (metadata) return res.send(metadata[0])
+  res.send({})
+})
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
